@@ -1,0 +1,22 @@
+{% extends 'shop/layouts/main.html' %}
+{% block title %}
+Result-Tracker | Tetrabytes
+{% endblock title %}
+{% block body %}
+{% block content%}
+
+<div>
+    {% for item in status %}
+
+    <h1>Your Order Status : </h1> <b> {{item.item.name}}</b>
+
+    {% endfor %}
+
+</div>
+{% endblock content%}
+{% endblock body %}
+
+
+
+</body>
+</html>
